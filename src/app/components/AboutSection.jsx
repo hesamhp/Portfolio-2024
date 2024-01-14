@@ -1,20 +1,19 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
+import Image from "next/`image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Skillsa",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>Ui Design</li>
+        <li>Graphic Design</li>
+        <li>Js</li>
       </ul>
     ),
   },
@@ -23,18 +22,10 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>Figma</li>
+        <li>Blender</li>
       </ul>
     ),
   },
@@ -77,14 +68,7 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
+              Apps{" "}
             </TabButton>
           </div>
           <div className="mt-8">
