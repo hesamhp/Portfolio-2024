@@ -7,62 +7,89 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Bad Bith Songs Cover Art",
+    description: "Sijal Leito Khalse Canis",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/1.png",
+    previewUrl: "/images/projects/1.png",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Homie Songs Cover Art",
+    description: "Mehyad",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/2.png",
+    previewUrl: "/images/projects/2.png",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Eybi Nadare Songs Cover Art",
+    description: "Talkdown X Fedi",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/3.png",
+    previewUrl: "/images/projects/3.png",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Bemoon Ba Man Songs Cover Art",
+    description: "Koorosh X Arta",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/4.png",
+    previewUrl: "/images/projects/4.png",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "French X",
+    description: "Nazli Mcfian",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/5.png",
+    previewUrl: "/images/projects/5.png",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Homie Songs Cover Art",
+    description: "Mehyad",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: "Design",
+    gitUrl: "/images/projects/6.png",
+    previewUrl: "/images/projects/6.png",
+  },
+  {
+    id: 7,
+    title: "Edame Songs Cover Art",
+    description: "Mahyar",
+    image: "/images/projects/7.png",
+    tag: "Design",
+    gitUrl: "/images/projects/7.png",
+    previewUrl: "/images/projects/7.png",
+  },
+  {
+    id: 8,
+    title: "Parvane ha Songs Cover Art",
+    description: "Mehyad X Lennah",
+    image: "/images/projects/8.png",
+    tag: "Design",
+    gitUrl: "/images/projects/8.png",
+    previewUrl: "/images/projects/8.png",
+  },
+  {
+    id: 9,
+    title: "Parvaz Songs Cover Art",
+    description: "Xarshia",
+    image: "/images/projects/9.png",
+    tag: "Design",
+    gitUrl: "/images/projects/9.png",
+    previewUrl: "/images/projects/9.png",
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Design");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -87,19 +114,19 @@ const ProjectsSection = () => {
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+          name="Design"
+          isSelected={tag === "Design"}
+        />
+        {/* <ProjectTag
+          onClick={handleTagChange}
+          name="Cover Art"
+          isSelected={tag === "Cover Art"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
+          name="UI"
+          isSelected={tag === "UI"}
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
