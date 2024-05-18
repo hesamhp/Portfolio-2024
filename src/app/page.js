@@ -18,6 +18,7 @@ export default function Home() {
         <EmailSection />
       </div>
       <Footer />
+      <script src="//code.tidio.co/drmn0u5p0fumenvifsqqdvfflgkkmlam.js" async></script>``
     </main>
   );
 }
